@@ -1,0 +1,64 @@
+.preferences-box {
+  width: 350px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+.preferences-box h2 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.tab-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hide radio buttons */
+.tab-container input[type="radio"] {
+  display: none;
+}
+
+.tab {
+  display: inline-block;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  color: gray;
+  border-bottom: 2px solid transparent;
+}
+
+#tab1:checked + label[for="tab1"],
+#tab2:checked + label[for="tab2"] {
+  color: green;
+  border-bottom: 2px solid green;
+}
+
+.tab-content {
+  display: none;
+  margin-top: 15px;
+}
+
+#tab1:checked ~ #content1 {
+  display: block;
+}
+
+#tab2:checked ~ #content2 {
+  display: block;
+}
+
+.tab-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tab-content li {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}

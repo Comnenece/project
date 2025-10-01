@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BECOME A SELLER</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      font-family: arial;
+    }
+
+    .Sign button{
+    background-color: rgb(29, 191, 115);
+    color: white;
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 600px;
+    margin-top: 20px;
+  }
+
+  .Sign p{
+    font-size: 20px;
+    padding-left: 50px;
+    margin-top:30px ;
+    margin-left: 470px;
+  }
+
+  .what-one{
+    gap: 100px;
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .what-two{
+    display: flex;
+    gap: 100px;
+    margin-bottom: 20px;
+  }
+  .what-three{
+    display: flex;
+    gap: 100px;
+  }
+  .what1{
+    height: 50px;
+    width: 400px;
+    background-color: white;
+  }
+  .what2{
+    height: 50px;
+    width: 400px;
+    background-color: white;
+  }
+  .what3{
+    height: 50px;
+    width: 400px;
+    background-color: white;
+  }
+  .what4{
+    height: 50px;
+    width: 400px;
+    background-color: white;
+  }
+  .what5{
+    height: 50px;
+    width: 400px;
+    background-color: white;
+  }
+  .what6{
+    height: 50px;
+    width: 400px;
+    background-color: white;
+  }
+  .QandA{
+    justify-items: center;
+  }
+  .question{
+    background-color: rgb(247, 247, 247);
+    height: 350px;
+  }
+  .question h1{
+    justify-self: center;
+    margin-bottom:40px ;
+  }
+  .question p{
+    font-weight: bold;
+    justify-self: first baseline;
+    margin-top: 15px;
+  }
+  .buyer{
+    background-color:rgb(247, 247, 247) ;
+    margin-bottom: 50px;
+    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+  }
+  .buyer img{
+    width: 180px;
+    height: 180px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .buyer h1{
+    height: 180px;
+    width: 180px;
+    font-size: 20px;
+    margin-top: -25px;
+    margin-right: 100px;
+  }
+  .story{
+    font-size: 30px;
+    justify-self: center;
+    margin-bottom: 30px;
+  }
+  .learn{
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    height: 400px;
+    width: 80%;
+    justify-self: center;
+    margin-bottom: 50px;
+  }
+  .learn video{
+    height: 300px;
+    width: 300px;
+    margin-left: 250px;
+  }
+  .learn img{
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .learn h2{
+    margin-left: 50px;
+    margin-bottom: 30px;
+  }
+  .learn p{
+    margin-left: 50px;
+  }
+  .learn button{
+    background-color: rgb(29, 191, 115);
+    height: 50px;
+    width: 170px;
+    border: none;
+    margin-left: 50px;
+    margin-top: 30px;
+    color: white;
+  }
+  .work{
+    background-color:rgb(247, 247, 247) ;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  .work h1{
+    justify-self: center;
+    margin-bottom: 10px;
+  } 
+  .work p{
+    margin-left: 30px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: lighter;
+  }
+  .work img{
+    background: none;
+    height: 100px;
+    width: 100px;
+    margin-left: 150px;
+    margin-bottom: 20px;
+  }
+  .it{
+    display: flex;
+    margin-left: 50px;
+  }
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 70vh; 
+  overflow: hidden;
+  background: black;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     
+  display: block;
+}
+
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+
+.overlay-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #1dbf73;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.overlay-btn:hover {
+  background: #1dbf73;
+}
+
+
+.community-heading {
+  text-align: center;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(2,250px);
+  gap: 20px;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto 40px;
+}
+
+.card {
+  position: relative;
+  background-color: #ddd;
+  height: 250px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  display: flex;
+  align-items: flex-end;
+}
+
+.card-text {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+
+.card:hover {
+  transform: scale(1.05);
+  filter: brightness(0.8);
+}
+
+.cta-box {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-box h2 {
+  margin-bottom: 10px;
+}
+
+.cta-btn {
+  background-color: #1dbf73;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #159c5b;
+}
+
+.second-footer{
+    border-top: 1px black solid;
+    margin-top: 90px;
+  } 
+
+.site-footer {
+  background-color: #222;  
+  color: #eee;              
+  padding: 40px 20px;
+  font-size: 14px;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column h3 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.footer-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-list li {
+  margin-bottom: 8px;
+}
+
+.footer-list a {
+  text-decoration: none;
+  color: #bbb;
+  transition: color 0.3s;
+}
+
+.footer-list a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  margin-top: 30px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.footer-bottom a {
+  color: #bbb;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: #fff;
+}
+.buyer-stories {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.buyer-stories h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.stories-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Always two columns */
+  grid-template-rows: 1fr 1fr;   /* Always two rows */
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.story {
+  background: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+.story img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.story blockquote {
+  margin-top: 15px;
+  font-style: italic;
+  color: #555;
+}
+
+.story cite {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  font-style: normal;
+  color: #333;
+}
+/* ========================= */
+/*   RESPONSIVENESS STYLES   */
+/* ========================= */
+
+/* -------- Tablet (≤ 1024px) -------- */
+@media (max-width: 1024px) {
+  /* Sign section */
+  .Sign button,
+  .Sign p {
+    margin-left: 0;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+  }
+
+  /* Cards */
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+  /* Stories */
+  .stories-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Buyer section */
+  .buyer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Footer */
+  .footer-inner {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+  }
+
+  /* First video (learn) */
+  .learn {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .learn video {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+
+  /* Second video */
+  .second-video video {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+
+  /* Q & A */
+  .qna {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .qna-item {
+    flex: 1 1 45%;
+  }
+  .learn{
+    display: none;
+  }
+}
+
+/* -------- Mobile (≤ 768px) -------- */
+@media (max-width: 768px) {
+  /* Cards */
+  .card-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .learn{
+    display: none;
+  }
+
+  /* Buyer */
+  .buyer {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+  .footer-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  /* IT Section */
+  .it {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .it img {
+    margin: 0 0 10px;
+  }
+
+  /* Stories */
+  .stories-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Videos */
+  video {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Q & A */
+  .qna-item {
+    flex: 1 1 100%;
+  }
+}
+
+/* -------- Small Phones (≤ 480px) -------- */
+@media (max-width: 480px) {
+  /* Overlay text/buttons */
+  .overlay-text {
+    font-size: 1.2rem;
+    padding: 0 10px;
+  }
+  .learn{
+    display: none;
+  }
+
+  .overlay-btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  /* Card texts */
+  .card-text {
+    font-size: 0.9rem;
+  }
+
+  /* Buyer */
+  .buyer {
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+  }
+
+  /* Buttons */
+  button {
+    padding: 8px 14px;
+    font-size: 0.9rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+<div class="video-container">
+  <video autoplay muted loop playsinline>
+    <source src="https://sg.fiverrcdn.com/packages_lp/cover_video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="overlay-text">
+    Work Your Way <br>
+    <small>You bring the skill. We'll make earning easy</small>
+    <br><br>
+    <a href="" class="overlay-btn">Get Started</a>
+  </div>
+</div>
+
+
+<h1 class="community-heading">
+  Join our growing freelance community
+</h1>
+
+<div class="card-container">
+  <div class="card" style="background-image: url('https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/be9e63fa588288b35991ed8e8c6550d9-1614861018529/designer.jpg');">
+    <div class="card-text">I am a Designer</div>
+  </div>
+
+  <div class="card" style="background-image: url('https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/be9e63fa588288b35991ed8e8c6550d9-1614861018521/voiceover.jpg');">
+    <div class="card-text">I am a Developer</div>
+  </div>
+
+  <div class="card" style="background-image: url('https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/be9e63fa588288b35991ed8e8c6550d9-1614861018522/musician.jpg');">
+    <div class="card-text">I am a Video Editor</div>
+  </div>
+
+  <div class="card" style="background-image: url('https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/be9e63fa588288b35991ed8e8c6550d9-1614861018521/video.jpg');">
+    <div class="card-text">I am a Musician</div>
+  </div>
+
+  <div class="card" style="background-image: url('https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/699482a05db770305ba6f2fc7139b98a-1614861401146/analyst.jpg');">
+    <div class="card-text">I am a Voiceover Artist</div>
+  </div>
+
+  <div class="card" style="background-image: url('https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/699482a05db770305ba6f2fc7139b98a-1614861401148/developer.jpg');">
+    <div class="card-text">I am a Social Media Marketer</div>
+  </div>
+
+  <div class="card" style="background-image: url('');">
+    <div class="card-text">I am a Writer</div>
+  </div>
+
+  <div class="cta-box">
+    <h2>What's Your Skill?</h2>
+    <a href="your-link.html" class="cta-btn">Become a Seller</a>
+  </div>
+</div>
+
+
+  <div class="work">
+    <h1>How it Works</h1>
+   <div class="it">
+     <div class="one">
+      <img src="https://external-preview.redd.it/KBaC-Ik5sl7L5lLYTai8S4dDMb70TCKDMTqmNAsRDGE.jpg?auto=webp&s=8f2c14b7a102733f76fff7b48bf9e6601d452d7c" alt="">
+      <h1>1.Create Gig</h1>
+      <p>Sign up for free, set up your Gig, and offer your
+                 work to our global audience</p>
+    </div>
+    <div class="two">
+      <img src="data:image/jpeg;base64,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" alt="">
+      <h1>2.Deliver great work</h1>
+      <p>Get notified when you get an order and use our  system to discuss details with customers</p>
+    </div>
+    <div class="three">
+      <img src="data:image/png;base64,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" alt="">
+      <h1>3.Get Paid</h1>
+      <p>Get paid on time, every time. Payment is available for withdrawal as soon as it clears.</p>
+    </div>
+   </div>
+  </div>
+
+  <div class="learn">
+    <div>
+      <img src="https://assetsv2.fiverrcdn.com/assets/v2_globals/learn_more-a06723146c93bf114f2a54f947f9bf9c.svg" alt="">
+      <h2>On-demand professional courses,<br> led by the world’s leading experts.</h2>
+      <p>Discover what it takes to be a top-notch seller on Fiverr with <br> this complimentary Learn from Fiverr course.</p>
+      <button>Learn More</button>
+    </div>
+    <div class="video">
+      <video controls src="https://fiverr-res.cloudinary.com/video/upload/q_auto/generic/landing/Chapter01_Introduction01.mp4"></video>
+    </div>
+  </div>
+
+  <!-- <p class="story">Buyer Story</p> -->
+
+<section class="buyer-stories">
+  <h2>Buyer stories</h2>
+  <div class="stories-container">
+    <div class="story">
+      <img src="https://assetsv2.fiverrcdn.com/assets/v2_photos/start-selling-new/buyer_thumbnail/x1/gore-1f4172b427d8f9e235315a4bef0005ba.jpg" alt="Buyer 1">
+      <blockquote>
+        <p>"People love our logo, and we love Fiverr."</p>
+        <cite>Jennifer Gore, CEO of Weleet</cite>
+      </blockquote>
+    </div>
+
+    <div class="story">
+      <img src="https://assetsv2.fiverrcdn.com/assets/v2_photos/start-selling-new/buyer_thumbnail/x1/mashal-33f872c49bcda0de9f8885221576da31.jpg" alt="Buyer 2">
+      <blockquote>
+        <p>"Fiverr is an amazing resource for anyone in the startup space."</p>
+        <cite>Adam Mashaal, CEO of Mashfeed</cite>
+      </blockquote>
+    </div>
+
+    <div class="story">
+      <img src="https://assetsv2.fiverrcdn.com/assets/v2_photos/start-selling-new/buyer_thumbnail/x1/sunami-267bb7f3aef30a93da28c53c9b1e360d.jpg" alt="Buyer 3">
+      <blockquote>
+        <p>"There is no way I could have produced anything without Fiverr."</p>
+        <cite>Christopher Norman, Music Producer</cite>
+      </blockquote>
+    </div>
+
+    <div class="story">
+      <img src="https://assetsv2.fiverrcdn.com/assets/v2_photos/start-selling-new/buyer_thumbnail/x1/dolan-abb0849dca439bdcdc477b1f77ab9a68.jpg" alt="Buyer 4">
+      <blockquote>
+        <p>"Fiverr enables me to quickly, efficiently and cost-effectively get things done."</p>
+        <cite>Christina Dolan, Entrepreneur</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+
+  <div class="question">
+    <h1>Q&A</h1>
+    <div class="QandA">
+      <div class="what-one">
+        <div class="what1">
+        <p>What can I sell?</p>
+      </div>
+      <div class="what2">
+        <p>How much time will I need to invest?</p>
+      </div>
+      </div>
+     <div class="what-two">
+       <div class="what3">
+        <p>How much money can I make?</p>
+      </div>
+      <div class="what4">
+        <p>How do I price my service?</p>
+      </div>
+     </div>
+      <div class="what-three">
+        <div class="what5">
+        <p>How much does it cost</p>
+      </div>
+      <div class="what6">
+        <p>How do I get paid?</p>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="Sign">
+    <p>Sign up and create your first Gig today</p>
+    <button>Get Started</button>
+  </div>
+
+  <div class="second-footer">
+    <!-- Footer -->
+  <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+    <div class="footer-inner">
+
+      <!-- Column: Categories -->
+      <nav class="footer-column" aria-labelledby="footer-cat">
+        <h3 id="footer-cat">Categories</h3>
+        <ul class="footer-list">
+          <li><a href="#">Graphics &amp; Design</a></li>
+          <li><a href="#">Digital Marketing</a></li>
+          <li><a href="#">Writing &amp; Translation</a></li>
+          <li><a href="#">Video &amp; Animation</a></li>
+          <li><a href="#">Music &amp; Audio</a></li>
+          <li><a href="#">Programming &amp; Tech</a></li>
+          <li><a href="#">AI Services</a></li>
+          <li><a href="#">Consulting</a></li>
+          <li><a href="#">Data</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">Personal Growth &amp; Hobbies</a></li>
+        </ul>
+      </nav>
+
+      <!-- Column: For Clients -->
+      <nav class="footer-column" aria-labelledby="footer-clients">
+        <h3 id="footer-clients">For Clients</h3>
+        <ul class="footer-list">
+          <li><a href="#">How Fiverr Works</a></li>
+          <li><a href="#">Customer Success Stories</a></li>
+          <li><a href="#">Trust &amp; Safety</a></li>
+          <li><a href="#">Quality Guide</a></li>
+          <li><a href="#">Fiverr Guides</a></li>
+          <li><a href="#">Fiverr Answers</a></li>
+          <li><a href="#">Skill Hub</a></li>
+        </ul>
+      </nav>
+
+      <!-- Column: For Freelancers -->
+      <nav class="footer-column" aria-labelledby="footer-freelancers">
+        <h3 id="footer-freelancers">For Freelancers</h3>
+        <ul class="footer-list">
+          <li><a href="#">Become a Fiverr Freelancer</a></li>
+          <li><a href="#">Become an Agency</a></li>
+          <li><a href="#">Freelancer Equity Program</a></li>
+          <li><a href="#">Community Hub</a></li>
+          <li><a href="#">Forum</a></li>
+          <li><a href="#">Events</a></li>
+        </ul>
+      </nav>
+
+      <!-- Column: Business Solutions -->
+      <nav class="footer-column" aria-labelledby="footer-business">
+        <h3 id="footer-business">Business Solutions</h3>
+        <ul class="footer-list">
+          <li><a href="#">Fiverr Pro</a></li>
+          <li><a href="#">Project Management Service</a></li>
+          <li><a href="#">Expert Sourcing Service</a></li>
+          <li><a href="#">ClearVoice - Content Marketing</a></li>
+          <li><a href="#">Working Not Working</a></li>
+          <li><a href="#">AutoDS - Dropshipping Tool</a></li>
+          <li><a href="#">AI store builder</a></li>
+          <li><a href="#">Fiverr Logo Maker</a></li>
+          <li><a href="#">Contact Sales</a></li>
+        </ul>
+      </nav>
+
+      <!-- Column: Company -->
+      <nav class="footer-column" aria-labelledby="footer-company">
+        <h3 id="footer-company">Company</h3>
+        <ul class="footer-list">
+          <li><a href="#">About Fiverr</a></li>
+          <li><a href="#">Help &amp; Support</a></li>
+          <li><a href="#">Social Impact</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Do not sell or share my personal information</a></li>
+          <li><a href="#">Partnerships</a></li>
+          <li><a href="#">Creator Network</a></li>
+          <li><a href="#">Affiliates</a></li>
+        </ul>
+      </nav>
+
+      <!-- Bottom row -->
+      <div class="footer-bottom">
+        <div>© <span id="year"></span> Fiverr Clone. All rights reserved.</div>
+        <div>
+          <a href="#">Privacy</a> · 
+          <a href="#">Cookies</a> · 
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </div>
+
+</body>
+</html>

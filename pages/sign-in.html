@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f0f2f5;
+    }
+
+    .card {
+      display: flex;
+      width: 900px; 
+      max-width: 95%;
+      height: 500px;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    /* Left side with image + overlay text */
+    .card .image {
+      flex: 1;
+      background: url("https://fiverr-res.cloudinary.com/npm-assets/layout-service/standard.0638957.png") no-repeat center center/cover;
+      position: relative;
+      color: #fff;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .image h1 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+    }
+
+    .image ul {
+      list-style: none;
+      font-size: 1rem;
+    }
+
+    .image ul li {
+      margin-bottom: 12px;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+    }
+
+    /* Right side content */
+    .card .content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+    }
+
+    .content h2 {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .btn {
+      width: 100%;
+      max-width: 300px;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: #fff;
+      transition: 0.2s ease;
+    }
+
+    .btn:hover {
+      background: #f7f7f7;
+    }
+
+    .btn img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      margin: 15px 0;
+      font-size: 0.85rem;
+      color: #555;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .divider::before,
+    .divider::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: #ccc;
+    }
+
+    .divider span {
+      margin: 0 10px;
+    }
+
+    .small-text {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #555;
+    }
+
+    .small-text a {
+      color: #0073e6;
+      text-decoration: none;
+    }
+
+    .small-text a:hover {
+      text-decoration: underline;
+    }
+
+    /* RESPONSIVENESS */
+    @media (max-width: 768px) { /* Mobile & small tablets */
+      .card {
+        flex-direction: column;
+        width: 95%;
+        height: auto;
+      }
+      .card .image {
+        display: none; /* hide image only on small screens */
+      }
+      .card .content {
+        width: 100%;
+        padding: 40px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <!-- Left image with text -->
+    <div class="image">
+      <h1>Success starts here</h1>
+      <ul>
+        <li>✓ Over 700 categories</li>
+        <li>✓ Quality work done faster</li>
+        <li>✓ Access to talent and businesses across the globe</li>
+      </ul>
+    </div>
+
+    <!-- Right content -->
+    <div class="content">
+      <h2>Sign in to your account</h2>
+
+      <button class="btn">
+        <img src="https://cdn-icons-png.flaticon.com/512/281/281764.png" alt="Google">
+        Continue with Google
+      </button>
+
+      <button class="btn">
+        <img src="https://cdn-icons-png.flaticon.com/512/0/747.png" alt="Apple">
+        Continue with Apple
+      </button>
+
+      <button class="btn">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+        Continue with Facebook
+      </button>
+
+      <div class="divider"><span>OR</span></div>
+
+      <button class="btn">
+        <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email">
+        Continue with email/username
+      </button>
+
+      <p class="small-text">Don't have an account? <a href="#">Join here</a></p>
+    </div>
+  </div>
+
+</body>
+</html>
